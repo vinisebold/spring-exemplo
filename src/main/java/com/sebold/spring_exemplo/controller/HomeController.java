@@ -11,9 +11,4 @@ public class HomeController {
         return "<h1><b>Hello, world!</b></h1>";
     }
 
-    @GetMapping("/test")
-    public String texto(){
-        return "<h2>teste<h2>";
-    }
-
 }

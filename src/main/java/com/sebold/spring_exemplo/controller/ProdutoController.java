@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class ProdutoController {
 
     @Autowired
@@ -32,8 +33,6 @@ public class ProdutoController {
     public void atualizarProdutos(@RequestBody Produto p) {
         servico.atualizarProduto(p);
     }
-
-
 
     // Delete
     @DeleteMapping("/produtos/{id}")
